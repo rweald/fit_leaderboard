@@ -8,8 +8,7 @@ defmodule FitLeaderboard do
 
     # Define workers and child supervisors to be supervised
     children = [
-      # Starts a worker by calling: FitLeaderboard.Worker.start_link(arg1, arg2, arg3)
-      # worker(FitLeaderboard.Worker, [arg1, arg2, arg3]),
+      worker(FitLeaderboard.Repo, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
