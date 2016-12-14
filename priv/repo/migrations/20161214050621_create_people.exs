@@ -7,6 +7,5 @@ defmodule FitLeaderboard.Repo.Migrations.CreatePeople do
       add :first_name, :string
       add :last_name, :string
     end
-
   end
 end
