@@ -14,7 +14,7 @@ defmodule FitLeaderboard.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :ecto, :postgrex],
+    [applications: [:logger, :ecto, :postgrex, :httpoison],
      mod: {FitLeaderboard, []}]
   end
 
@@ -31,7 +31,9 @@ defmodule FitLeaderboard.Mixfile do
     [{:ecto, "~> 2.0"},
       {:postgrex, "~> 0.11"},
       {:cowboy, "~> 1.0.0"},
-      {:plug, "~> 1.0"}
+      {:plug, "~> 1.0"},
+      {:httpoison, "~> 0.10.0"},
+      {:poison, "~> 2.0"}
     ]
   end
 end
